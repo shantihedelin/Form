@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="headerContainer">
+
+        <img class="dogPicture" src="hund.jpg" alt="Hund i partyhatt">
+        <div class="Member">Bli medlem</div>
+
+    </div>
+
+    <div class="FormContainer">
+
+            <form class="Form" action="https://httpbin.org/anything" method="post">
+
+                <div class="Email">
+                    <label for="email">E-postadress</label>
+                    <input type="email" id="email" Emailaddress="email" required >
+                </div>
+
+                <div class="Password">
+                    <label for="passw">Önskat lösenord</label>
+                    <input type="password" id="passw" Password="passw" required >
+                </div>
+
+                <div class="PersonNumber">    
+                    <label for="idNumb">Personnummer</label>
+                    <input type="text" id="idNumb" Idnumber="idNumb" required>
+                </div>
+
+                <div class="PhoneNumber">    
+                    <label for="phoneNumb">Mobilnummer</label>
+                    <input type="text" id="phoneNumb" Phonenumber="phoneNumb">
+                </div>
+
+                <div class="FirstName">
+                    <label for="fName">Förnamn</label>
+                    <input type="text" id="fName" Firstname="fName" required>
+                </div>
+
+                <div class="LastName">
+                    <label for="lName">Efternamn</label>
+                    <input type="text" id="lName" Lastname="lName" required>
+                </div>
+               
+                <div class="HomeAdress">
+                    <label for="homeAdress">Adress</label>
+                    <input type="text" id="homeAdress" Adress="homeAdress">
+                </div>
+
+                <div class="PostNumber">
+                    <label for="postNumber">Postnummer</label>
+                    <input type="text" id="postNumber" Postalnumber="postNumber">
+                </div>
+            
+                <div class="City">
+                    <label for="theCity">Stad</label>
+                    <input type="text" id="theCity" City="theCity">
+                </div>
+
+                <div class="Checkbox">
+                    <input type="checkbox" id="TermsConds" TermsConditions="TermsConds" required class="check">
+                    <label for="TermsConds">Jag har läst och godkänner Medlemsvillkoren</label>
+                </div>
+
+                <div class="RadioButtons">
+                    <label for="HumCheck" class="labelHumCheck">Välj det djur som inte har 4 ben: <br></label>
+                    <input type="radio" value="dog" id="Dog" /><label for="Dog" >Hund</label>
+                    <input type="radio" value="cat" id="Cat" /><label for="Cat" >Katt</label>
+                    <input type="radio" value="bird" id="Bird" required /><label for="Bird">Fågel</label>
+                    <input type="radio" value="fox" id="Fox" /><label for="Fox" >Räv</label>
+                </div>
+
+                <button type="submit">Skapa konto</button>
+
+            </form>
+
+        </div>
+
+        <div class="Footer">
+            Lagerhaus AB
+        </div>
+    
+</body>
+</html>
